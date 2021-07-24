@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "compile-sass": "sass --watch public/styles/SCSS/main.scss public/styles/CSS/index.css",
+    "devStart": "concurrently \"npm:start\" \"npm:compile-sass\""
+  },
+  "author": "Brian Leighton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "sass": "^1.35.2"
+  }
+}
