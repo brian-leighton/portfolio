@@ -1,0 +1,11 @@
+@keyframes pulse{
+    0%{
+        transform: rotate(-45deg) scale(.6);
+        opacity: .35;
+    }
+
+    100%{
+        transform: rotate(-45deg) scale(1.2);
+        opacity: 1;
+    }
+}

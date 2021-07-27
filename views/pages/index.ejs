@@ -1,25 +1,44 @@
 <%- include("../partials/header.ejs") %>
     <div class="landing">
-
+        <video autoplay muted loop id="landingVideo">
+            <source src="/assets/videos/waves-video.mp4" type="video/mp4">
+        </video>
+        <div class="landing__content">
+            <h1 class="heading heading__jumbo u-color-orange u-center-text">Brian Leighton</h1>
+            <p class="sub-heading u-center-text">
+                A Nova Scotia based front-end developer with a passion
+                for clean interfaces and clear user experiences.
+            </p>
+        </div>
+        <a href="#about" class="landing__arrow"><div>f</div></a>
     </div>
     <div class="container">
         <nav class="navigation">
-
             <div class="logo">
                 <p>B</p>
             </div>
             <ul class="navigation__links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li>Contact</li>
+                <li id="about-link"><a href="#about">About</a></li>
+                <li id="projects-link"><a href="#projects">Projects</a></li>
                 <li><a href="/blog">Blog</a></li>
+                <li id="contact-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="about about__alt">
+        <main class="about" id="about" role="main">
+            <h3 id="about-anchor">About</h3>
+            <aside>
 
+            </aside>
+
+        </main>
+        <div class="projects about about__alt" id="projects">
+            <h3 id="projects-anchor"></h3>
         </div>
-        <div class="about">
-
+        <div class="test" id="contact">
+            <h3 id="contact-anchor"></h3>
         </div>
     </div>
+    <footer>
+        FOOTER
+    </footer>
 <%- include("../partials/footer.ejs") %>

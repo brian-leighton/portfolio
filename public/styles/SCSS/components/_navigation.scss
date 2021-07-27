@@ -80,6 +80,15 @@
 .container{
     min-height: 100vh;
     width: 100%;
-    // width: 100vw;
+}
+.test{
+    height: 200vh;
     background: $color-orange;
+    width: 100%;
+}
+
+.activeSection{
+    &::after{
+        transform: scaleX(1) !important;
+    }
 }

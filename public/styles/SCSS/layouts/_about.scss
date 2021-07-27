@@ -1,7 +1,16 @@
 .about{
     height: 100vh;
-    background: $color-grey-light;
+    background: $color-green;
+    padding-top: 8rem;
     &__alt{
         background: purple;
     }
+}
+
+.about aside{
+    width: 80%; 
+    height: 4rem;
+    background: red;
+    margin: 0 auto;
+    // margin-top: 11rem;
 }
