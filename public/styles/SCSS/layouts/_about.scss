@@ -1,16 +1,112 @@
 .about{
-    height: 100vh;
-    background: $color-green;
+    background: $color-white;
     padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem 0;
     &__alt{
         background: purple;
+    }
+    &__content{
+        & > h3{
+            padding-bottom: 2.6rem;
+        }
+        & > p {
+            max-width: 74ch;
+        }
+
+
+    }
+    &__assessment{
+        height: max-content;
+        flex: 0 0 45%;
+        padding: 2rem;
+        display: flex;
+        margin-top: 6.5rem;
+        @include mq("medium"){
+            flex: 0 0 80%;
+            justify-content: center;
+            margin-top: 0;
+            order: 3;
+        }
+        @include mq("phone"){
+            flex: 1;
+            padding: 2rem 0.5rem;
+        }
+        &--container{
+            background: $color-grey-dark;
+            padding: 2rem;
+            min-width: 25rem;
+            flex:0 1 60rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem 0;
+        }
+    }
+    //skill graph styles
+    &__skill{
+        background: $color-white;
+        height: max-content;
+        display: flex;
+
+        &--title{
+            display: inline-block;
+            padding: .45rem 1.5rem;
+            min-width: 33%;
+            background: $color-primary;
+        }
+    }
+    &__skill-rating{
+        flex: 1;
+        background: $color-white;
+
+        & > p {
+            background: $color-primary-dark;
+            height: 100%;
+        }
+        & > p[title~="html"]{
+            width: 85%;
+        }
+        & > p[title~="css"]{
+            width: 79%;
+        }
+        & > p[title~="js"]{
+            width: 65%;
+        }
+        & > p[title~="react"]{
+            width: 70%;
+        }
+        & > p[title~="node"]{
+            width: 60%;
+        }
+    }
+}
+
+#about-anchor,#projects-anchor ,#contact-anchor{
+    flex: 1 0 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: $font-secondary;
+    color: $color-primary-extra-dark;
+    padding: 4rem 0 12rem 0;
+
+    @include mq("medium"){
+        padding: 4rem 0 6rem 0;
+
     }
 }
 
 .about aside{
     width: 80%; 
-    height: 4rem;
-    background: red;
     margin: 0 auto;
-    // margin-top: 11rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem 0;
+    margin-bottom: 10rem;
+
+    @include mq("phone"){
+
+    }
 }

@@ -3,8 +3,14 @@ p{
 }
 
 .heading{
-    font-family: $font-primary;
+    font-family: $font-secondary;
     letter-spacing: 1px;
+    &__secondary{
+        font-family: $font-primary;
+    }
+    &__large{
+        font-size: 4.2rem;
+    }
     &__jumbo{
         font-size: 6rem;
     }
@@ -25,5 +31,38 @@ p{
     font-size: 3rem;
     & p {
         font-family: $font-logo;
+    }
+}
+
+.about{
+    &__content{
+        font-size: 2rem;
+
+        & > h3 {
+            color: $color-primary;
+        }
+        & > p{
+            font-family: $font-primary;
+            color: $color-grey-dark;
+            padding: 1rem .25rem;
+        }
+        @include mq("small"){
+
+            & > h3 {
+                text-align: center;
+            }
+            & > p {
+                padding: 1rem;       
+            }
+        }
+    }
+    &__skill{
+
+        &--title{
+            font-size: 2.2rem;
+            color: $color-white;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 }

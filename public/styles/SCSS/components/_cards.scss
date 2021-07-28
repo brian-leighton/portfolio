@@ -1,0 +1,51 @@
+.card-skills{
+    background: white;
+    &__icon{
+        
+    }
+    &__content{
+        font-size: 1.5rem;
+        width: 30ch;
+        padding: 0 2.5rem;
+        text-align: center;
+        & > h2 {
+            font-size: 2.8rem;
+            padding: .5rem 0;
+            color: $color-orange;
+        }
+        & > p {
+            color: $color-grey-dark;
+            font-family: $font-primary;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.hexagon {
+    position: relative;
+    width: 125px; 
+    height: 72.17px;
+    background-color: $color-primary;
+    margin: 36.08px auto;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 62.5px solid transparent;
+    border-right: 62.5px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 36.08px solid $color-primary;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 36.08px solid $color-primary;
+  }
+

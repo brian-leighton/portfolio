@@ -1,9 +1,11 @@
+@import "base/base";
+@import "abstracts/mixins";
 @import "base/animations";
 @import "base/variables";
-@import "base/base";
 @import "base/typography";
 @import "abstracts/flex";
-@import "abstracts/mixins";
+@import "components/cards";
+@import "components/icons";
 @import "components/navigation";
 @import "layouts/about";
 @import "layouts/landing";

@@ -7,13 +7,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 9000;
+    @include mq("phone"){
+        background: rgba($color-primary, .92);
+    }
     &__links {
         display: flex;
-        gap: 0 1.5rem;
-        z-index: 600;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        z-index: 1000;
         padding: 0 2rem;
 
+        @include mq("phone"){
+            padding: 0 .5rem;
+        }
         & > li,li a {
             font-family: $font-primary;
             text-decoration: none;
@@ -46,6 +53,9 @@
     justify-content: center;
     z-index: 600;
 
+    @include mq("phone"){
+        transform: translate(-50%, -25%);
+    }
     & p {
         z-index: 1000;
     }
